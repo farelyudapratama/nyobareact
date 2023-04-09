@@ -1,47 +1,104 @@
-.banner-showcase{
-    height: 95vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.banner-showcase {
+  height: 95vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.banner-bg{
+.banner-bg {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.banner-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h4 {
+  font-family: var(--font-title);
+  font-weight: 200;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.home-about .row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introduce {
+  font-family: var(--font-family);
+  line-height: 1.7;
+  margin-right: 40px;
+}
+.introduce p {
+  margin: 20px 0;
+  color: var(--color-subtext);
+}
+.myimg img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.envelope{
     position: absolute;
-    top: -80px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.banner-bg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.home-about h4{
-    font-family: var(--font-title);
-    font-weight: 200;
-    font-size: 40px;
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-.home-about .row{
-    margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    top: 15px;
 }
-.introduce{
-    font-family: var(--font-family);
-    line-height: 1.7;
-    margin-right: 40px;
+.envelope svg {
+  width: 50px;
+  height: 50px;
+  background-color: #e9cb7f;
+  z-index: 1;
+  border-radius: 50%;
 }
-.introduce p{
-    margin: 20px 0;
+.envelope svg image {
+  width: 970px;
+  height: 800px;
 }
-.myimg img{
-    width: 350px;
+.contact-icon .email-contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  background-color: #fcf8ed;
+  height: 5rem;
+  width: 25rem;
+  border-radius: 20px;
+}
+.contact-icon .email-contact a {
+  font-family: var(--font-family);
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: rgb(255, 132, 61);
+  text-transform: uppercase;
+}
+.contact-icon .email-contact a:hover {
+  text-decoration: underline;
+}
+.socmed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socmed a{
+  margin: 0 20px;
+}
+.socmed a img{
+  width: 50px;
 }

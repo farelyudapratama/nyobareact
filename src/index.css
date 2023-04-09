@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;400;600;900&display=swap');
 
 :root{
   --font-title: 'Lobster', sans-serif;
@@ -6,7 +6,6 @@
 
   --color-bg: #e8f9fb;
   --color-text: #ffc400;
-  --color-subtext: #302e4d;
-  --color-subtext-dark: #81AFDD;
+  --color-subtext: #ecfcff;
   
 }

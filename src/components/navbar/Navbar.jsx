@@ -2,7 +2,7 @@ import React from "react";
 import {logo} from "../../assets";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className="navbar">
       <div className="navbar-links">
@@ -11,13 +11,13 @@ const Navbar = () => {
         </div>
         <div className="navbar-links-container">
           <p>
-            <a href="#home">Home</a>
+            <a onClick={() => props.changePage('home')} >Home</a>
           </p>
           <p>
-            <a href="#gallery">Gallery</a>
+            <a onClick={() => props.changePage('gallery')} >Gallery</a>
           </p>
           <p>
-            <a href="#About">About</a>
+            <a onClick={() => props.changePage('about')} >About</a>
           </p>
         </div>
       </div>
